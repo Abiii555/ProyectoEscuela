@@ -1,14 +1,14 @@
 package ar.com.benavidez;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Alumno {
 	String nombre;
-	public Alumno(String nombre, String apellido, ArrayList<Materia> materias, String curso, String profesor) {
-		super();
+	public Alumno(String nombre, String apellido, List<Materia> materias, String curso, String profesor) {
 		this.nombre = nombre;
 		this.apellido = apellido;
-		this.materias = materias;
+		this.materias = (ArrayList<Materia>) materias;
 		this.curso = curso;
 		this.profesor = profesor;
 	}
